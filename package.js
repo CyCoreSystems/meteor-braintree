@@ -7,7 +7,10 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0.2.1');
-  api.addFiles('ulexus:braintree.js');
+  api.addFiles('client.js','client');
+
+  api.addFiles('ulexus:braintree.js','server');
+  api.export('Braintree','server');
 });
 
 Package.onTest(function(api) {
