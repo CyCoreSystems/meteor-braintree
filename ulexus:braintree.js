@@ -20,7 +20,7 @@ BraintreeClient = function(opts) {
 
 // createSale makes a sale (new transaction)
 BraintreeClient.prototype.createSale = function(opts) {
-   var wrapped = Metor.wrapAsync(this.client.transaction.sale,this.client.transaction);
+   var wrapped = Meteor.wrapAsync(this.client.transaction.sale,this.client.transaction);
    return wrapped(opts);
 };
 
