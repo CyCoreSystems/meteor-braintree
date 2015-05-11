@@ -38,7 +38,7 @@ BraintreeClient.prototype.getCustomer = function(id) {
 
 // createCreditCard saves a new credit card
 BraintreeClient.prototype.createCreditCard = function(opts) {
-   var wrapped = Meteor.wrapAsync(this.client.creditCard.create,thisclient.creditCart);
+   var wrapped = Meteor.wrapAsync(this.client.creditCard.create,this.client.creditCard);
    return wrapped(opts);
 };
 
