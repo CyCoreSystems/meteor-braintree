@@ -1,5 +1,11 @@
-ulexus:braintree
+ulexus:braintree `<deprecated>`
 =======
+
+DEPRECATED:  @patrickml has created a more complete, more compliant package which I recommend using instead:
+  * Github: [https://github.com/patrickml/braintree/](https://github.com/patrickml/braintree/)
+  * Atmosphere:  [https://atmospherejs.com/patrickml/braintree](https://atmospherejs.com/patrickml/braintree)
+  * Meteor add:  `patrickml:braintree`
+
 
 Exposes a few commonly-used methods of the Braintree client for Meteor (wrapped properly on the `BraintreeClient` object).
 
